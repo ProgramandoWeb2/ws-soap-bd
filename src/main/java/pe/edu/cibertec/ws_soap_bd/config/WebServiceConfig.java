@@ -23,19 +23,10 @@ public class WebServiceConfig extends WsConfigurerAdapter {
         servlet.setTransformWsdlLocations(true);
         return new ServletRegistrationBean<>(servlet, "/ws/*");
     }
-    @Bean
-    public XsdSchema paisEsquema(){
-        return new SimpleXsdSchema(new ClassPathResource("xsd/countries.xsd"));
-    }
 
-    @Bean(name = "paises")
-    public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema paisEsquema){
-        DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
-        wsdl11Definition.setPortTypeName("PaisesPort");
-        wsdl11Definition.setLocationUri("/ws/paises");
-        wsdl11Definition.setTargetNamespace("http://www.cibertec.edu.pe/ws/objects");
-        wsdl11Definition.setSchema(paisEsquema);
-        return wsdl11Definition;
-    }
+
+
+
+
 
 }
