@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
 // Visite https://eclipse-ee4j.github.io/jaxb-ri 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.10.12 a las 07:29:56 PM PET 
+// Generado el: 2024.10.16 a las 07:47:07 PM PET 
 //
 
 
@@ -37,27 +37,59 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetPaisRequest }
+     * Create an instance of {@link GetDomiciliosRequest }
      * 
      */
-    public GetPaisRequest createGetPaisRequest() {
-        return new GetPaisRequest();
+    public GetDomiciliosRequest createGetDomiciliosRequest() {
+        return new GetDomiciliosRequest();
     }
 
     /**
-     * Create an instance of {@link GetPaisResponse }
+     * Create an instance of {@link GetDomiciliosResponse }
      * 
      */
-    public GetPaisResponse createGetPaisResponse() {
-        return new GetPaisResponse();
+    public GetDomiciliosResponse createGetDomiciliosResponse() {
+        return new GetDomiciliosResponse();
     }
 
     /**
-     * Create an instance of {@link Pais }
+     * Create an instance of {@link Domiciliows }
      * 
      */
-    public Pais createPais() {
-        return new Pais();
+    public Domiciliows createDomiciliows() {
+        return new Domiciliows();
+    }
+
+    /**
+     * Create an instance of {@link GetDomicilioRequest }
+     * 
+     */
+    public GetDomicilioRequest createGetDomicilioRequest() {
+        return new GetDomicilioRequest();
+    }
+
+    /**
+     * Create an instance of {@link GetDomicilioResponse }
+     * 
+     */
+    public GetDomicilioResponse createGetDomicilioResponse() {
+        return new GetDomicilioResponse();
+    }
+
+    /**
+     * Create an instance of {@link PostDomicilioRequest }
+     * 
+     */
+    public PostDomicilioRequest createPostDomicilioRequest() {
+        return new PostDomicilioRequest();
+    }
+
+    /**
+     * Create an instance of {@link PostDomicilioResponse }
+     * 
+     */
+    public PostDomicilioResponse createPostDomicilioResponse() {
+        return new PostDomicilioResponse();
     }
 
 }
