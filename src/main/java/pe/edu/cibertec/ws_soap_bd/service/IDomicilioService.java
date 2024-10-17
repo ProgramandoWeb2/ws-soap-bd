@@ -1,14 +1,18 @@
 package pe.edu.cibertec.ws_soap_bd.service;
 
+import pe.edu.cibertec.ws.objects.GetDomicilioResponse;
+import pe.edu.cibertec.ws.objects.GetDomiciliosResponse;
+import pe.edu.cibertec.ws.objects.PostDomicilioRequest;
+import pe.edu.cibertec.ws.objects.PostDomicilioResponse;
 import pe.edu.cibertec.ws_soap_bd.model.Domicilio;
 
 import java.util.List;
 
 public interface IDomicilioService {
 
-    List<Domicilio> listarDomicilios();
+    GetDomiciliosResponse listarDomicilios();
 
-    Domicilio obtenerDomicilioxId(Integer id);
+    GetDomicilioResponse obtenerDomicilioxId(Integer id);
 
-    Domicilio registrarDomicilio(Domicilio domicilio);
+    PostDomicilioResponse registrarDomicilio(PostDomicilioRequest request);
 }

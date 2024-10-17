@@ -1,9 +1,11 @@
 package pe.edu.cibertec.ws_soap_bd.model;
 
 import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
+@Builder
 @Setter
 @Getter
 @Entity
